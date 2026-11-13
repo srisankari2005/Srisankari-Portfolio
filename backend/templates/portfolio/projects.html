@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Srisankari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+</head>
+<body>
+<div class="site-shell">
+<header class="navbar"><a class="logo-mark" href="index.html" aria-label="Srisankari home"><span>S</span></a><nav class="nav-links" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="education.html">Education</a><a href="skills.html">Skills</a><a href="internships.html">Internships</a><a href="achievements.html">Achievements</a><a href="certifications.html">Certifications</a><a href="projects.html">Projects</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+</nav><button class="theme-toggle" aria-label="Toggle dark and light mode">☾</button></header>
+<main class="inner-page page-padding">
+  <div class="section-heading reveal"><span class="eyebrow">MY WORK</span><h1>Featured <span>Projects</span></h1></div>
+  <section class="projects-zigzag">
+    <article class="project-card reveal"><div class="project-number">01</div><div><span class="project-tag">WEB APPLICATION</span><h2>Event Organizing & Management</h2><p>Developed an Event Organizing and Management web application to simplify event creation, registration, scheduling, and management. Built the responsive frontend using HTML, CSS, and JavaScript, with Python and Django for backend functionality and SQL for database management.</p><div class="tech-row project-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Django</span><span>SQLite</span></div></div></article>
+    <article class="project-card project-two reveal"><div class="project-number">02</div><div><span class="project-tag">IOT PROJECT</span><h2>Smart Heel Sandal for Electricity Generation</h2><p>Developed an IoT-based Smart Heel Sandal that generates electrical energy from footsteps using piezoelectric sensors. The generated energy is stored in a capacitor and battery, demonstrating a compact and innovative approach to harvesting energy from human movement.</p><div class="project-focus"><span class="focus-chip sparkle">Leadership</span><span class="focus-chip sparkle">Problem Solving</span><span class="focus-chip sparkle">Critical Thinking</span></div></div></article>
+    <article class="project-card reveal"><div class="project-number">03</div><div><span class="project-tag">ENVIRONMENTAL TECH</span><h2>Oil Spill Detection</h2><p>Developing a web-based oil spill detection system to identify and monitor oil contamination in ocean areas. The project focuses on providing an easy-to-use interface for detecting oil spills and supporting faster environmental monitoring and response.</p><div class="tech-row project-pills"><span>Web</span><span>Detection</span><span>Monitoring</span><span>Environmental Tech</span></div></div></article>
+  </section>
+</main>
+<a class="back-top" href="index.html">↑</a>
+</div><script src="{% static 'portfolio/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Srisankari - Frontend Developer, Web Designer, UI Designer and Content Creator">
+  <title>Srisankari | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+</head>
+<body>
+  <div id="loader" class="loader"><div class="loader-content"><div class="loader-logo">S</div><div class="loader-message">Are you ready to visit my profile?</div><div class="runner-track" aria-hidden="true">
+  <div class="flying-bird">
+    <span class="bird-body"></span><span class="bird-wing wing-a"></span><span class="bird-wing wing-b"></span><span class="bird-beak"></span>
+  </div>
+</div><div class="loader-sub">A little journey into my world is about to begin...</div><div class="loader-progress"><span></span></div></div></div>
+
+  <div class="site-shell">
+    <header class="navbar">
+      <a class="logo-mark" href="index.html" aria-label="Srisankari home">S</a>
+      <nav class="nav-links" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="education.html">Education</a><a href="skills.html">Skills</a><a href="internships.html">Internships</a><a href="achievements.html">Achievements</a><a href="certifications.html">Certifications</a><a href="projects.html">Projects</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+</nav>
+      <button class="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle theme">☾</button>
+    </header>
+
+    <main class="hero page-padding">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">HELLO, I'M</span>
+        <h1>Srisankari<span>.</span></h1>
+        <div class="typing-wrap">
+          <span class="typing-prefix">I’m a </span><span id="typingText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Passionate about building responsive, modern, and user-friendly web experiences.
+          Skilled in creating clean, interactive interfaces using HTML, CSS, JavaScript, and React.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary floating" href="{% static 'portfolio/resume.pdf' %}" download="Srisankari-Namasivayan-Resume.pdf">Download My Resume</a>
+          <a class="btn btn-outline floating-delay" href="contact.html">Hire Me</a>
+        </div>
+        <div class="socials">
+          <a class="social-icon instagram" href="https://www.instagram.com/sri_creationss/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5.3-2.35a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15Z"/></svg>
+          </a>
+          <a class="social-icon github" href="https://github.com/srisankari2005" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8A11.2 11.2 0 0 0 8.46 22.63c.56.1.77-.24.77-.54v-2.08c-3.14.68-3.8-1.34-3.8-1.34-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.58 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16A10.7 10.7 0 0 1 12 6.72c.96 0 1.92.13 2.82.38 2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.34-2.64 5.3-5.15 5.57.4.35.76 1.04.76 2.1v2.47c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+          </a>
+          <a class="social-icon linkedin" href="https://www.linkedin.com/in/srisankari2005" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5A2.5 2.5 0 1 1 5 8.5 2.5 2.5 0 0 1 5 3.5ZM2.75 9.75h4.5V21h-4.5V9.75ZM10 9.75h4.31v1.54h.06c.6-1.1 2.06-2.26 4.24-2.26 4.53 0 5.37 2.98 5.37 6.86V21h-4.5v-4.53c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39V21H10V9.75Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-delay">
+        <div class="profile-orbit"></div>
+        <div class="profile-card floating-slow">
+          <div class="profile-avatar">S</div>
+          <div class="profile-glow"></div>
+        </div>
+        <span class="floating-tag tag-one">Frontend</span>
+        <span class="floating-tag tag-two">UI / UX</span>
+        <span class="floating-tag tag-three">Creative</span>
+      </div>
+    </main>
+
+    <footer class="footer">© 2026 Srisankari. Built with HTML, CSS & JavaScript.</footer>
+  </div>
+  <script src="{% static 'portfolio/script.js' %}"></script>
+</body>
+</html>
